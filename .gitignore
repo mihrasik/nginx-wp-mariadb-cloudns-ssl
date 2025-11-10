@@ -1,0 +1,5 @@
+docs.local/
+.env
+.git
+.vscode
+.ssh
