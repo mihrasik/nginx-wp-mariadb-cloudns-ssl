@@ -8,8 +8,7 @@ fi
 
 # Install required packages for nginx, php, mariadb, and certbot
 apt-get update
-apt-get install -y nginx php8.3 php8.3-fpm php8.3-mysql php8.3-curl php8.3-gd php8.3-mbstring php8.3-xml php8.3-zip mariadb-server mariadb-client certbot python3-certbot-nginx dnsutils
-
+apt-get install -y nginx mariadb-server php php-fpm php-curl php-mysql php-gd php-mbstring php-xml php-imagick php-zip php-xmlrpc  mariadb-server mariadb-client certbot python3-certbot-nginx dnsutils -y
 # Enable and start services
 echo "Enabling nginx service..."
 if ! systemctl enable nginx 2>/dev/null; then

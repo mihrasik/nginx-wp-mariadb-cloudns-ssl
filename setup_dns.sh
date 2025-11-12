@@ -16,4 +16,4 @@ curl -X POST "https://api.cloudns.net/dns/update-record.json" \
   -d "value=$SERVER_IP" \
   -d "ttl=300"
 
-echo "DNS records updated successfully"
+# echo "DNS records updated successfully"
